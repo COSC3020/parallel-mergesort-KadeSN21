@@ -22,7 +22,10 @@ jobs:
         node-version: '14'  
 
     - name: Install dependencies
-      run: npm install  
+      run: npm install
+
+    - name: Install jsVerify  
+      run: npm install jsverify
 
     - name: Run tests
       run: node code.test.js  
